@@ -89,11 +89,22 @@
     .app-top h3{margin:0 0 5px;font-size:23px}.app-top span{color:var(--muted);font-size:14px}
     .app-card p{position:relative;color:var(--muted);line-height:1.7;margin:0 0 18px}
     .tags{position:relative;display:flex;flex-wrap:wrap;gap:8px}.tag{font-size:12px;color:#dce5ff;padding:8px 10px;border-radius:999px;background:rgba(255,255,255,.075);border:1px solid var(--line)}
+
+    .promo-banner{margin-top:20px;border-radius:30px;overflow:hidden;border:1px solid var(--line);background:rgba(255,255,255,.055);box-shadow:0 22px 70px rgba(0,0,0,.28)}
+    .promo-banner img{width:100%;display:block;object-fit:cover}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+    .shot{position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:rgba(255,255,255,.06);box-shadow:0 16px 44px rgba(0,0,0,.25)}
+    .shot img{width:100%;display:block;object-fit:cover;transition:transform .28s ease, filter .28s ease}
+    .shot:hover img{transform:scale(1.035);filter:brightness(1.08)}
+    .shot-label{position:absolute;left:10px;right:10px;bottom:10px;padding:9px 10px;border-radius:14px;background:rgba(7,9,19,.62);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);font-size:12px;font-weight:800;color:#fff}
+    .wide-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+    .wide-shot{border-radius:26px;overflow:hidden;border:1px solid var(--line);background:rgba(255,255,255,.055);box-shadow:0 20px 60px rgba(0,0,0,.26)}
+    .wide-shot img{width:100%;display:block;object-fit:cover}
     .features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.feature{padding:18px;border-radius:24px;background:rgba(255,255,255,.064);border:1px solid var(--line)}.feature b{display:block;margin-bottom:8px}.feature p{margin:0;color:var(--muted);line-height:1.55;font-size:14px}
     .notice{padding:22px;border-radius:28px;background:rgba(54,198,255,.07);border:1px solid rgba(54,198,255,.22);color:var(--muted);line-height:1.7}.notice strong{color:var(--text)}
     footer{padding:42px 0 54px;color:var(--muted)}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid var(--line);padding-top:24px}.foot-links{display:flex;gap:12px;flex-wrap:wrap}.foot-links a{color:#dfe7ff}.email{color:#fff;font-weight:700}
-    @media(max-width:860px){.hero-grid,.cards{grid-template-columns:1fr}.hero{padding-top:48px}.showcase{min-height:320px}.features{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.section-head{display:block}.section-head p{margin-top:10px}.foot{display:block}.foot-links{margin-top:16px}}
-    @media(max-width:520px){.wrap{width:min(100% - 24px,1120px)}.brand img{width:46px}.logo-big{width:min(210px,78vw);max-height:120px}.features{grid-template-columns:1fr}.mini-stats{grid-template-columns:1fr}.btn{width:100%}.hero{padding-top:36px}h1{letter-spacing:-1.5px}.glass-card{border-radius:26px}}
+    @media(max-width:860px){.hero-grid,.cards,.wide-gallery{grid-template-columns:1fr}.hero{padding-top:48px}.showcase{min-height:320px}.features{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(2,1fr)}.nav-links{display:none}.section-head{display:block}.section-head p{margin-top:10px}.foot{display:block}.foot-links{margin-top:16px}}
+    @media(max-width:520px){.wrap{width:min(100% - 24px,1120px)}.brand img{width:46px}.logo-big{width:min(210px,78vw);max-height:120px}.features,.gallery{grid-template-columns:1fr}.mini-stats{grid-template-columns:1fr}.btn{width:100%}.hero{padding-top:36px}h1{letter-spacing:-1.5px}.glass-card{border-radius:26px}.promo-banner,.wide-shot{border-radius:20px}.shot{border-radius:20px}}
   </style>
 </head>
 <body>
@@ -164,6 +175,41 @@
             <p>LGS öğrencileri için test çözme, tekrar yapma ve öğrenme sürecini daha eğlenceli hale getirmeye odaklanan eğitim uygulaması.</p>
             <div class="tags"><span class="tag">LGS</span><span class="tag">Eğitim</span><span class="tag">Oyunlaştırma</span><span class="tag">Mobil</span></div>
           </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="tarih-master-showcase">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Tarih Master deneyimi</h2>
+          <p>Konu testleri, denemeler, çalışma planı, puan takibi ve oyun modlarıyla KPSS hazırlığını daha düzenli ve motive edici hale getiren ekranlar.</p>
+        </div>
+        <div class="promo-banner">
+          <img src="assets/images/tarih_master_tanitim.png" alt="Tarih Master tanıtım görseli" loading="lazy" />
+        </div>
+        <div class="gallery">
+          <a class="shot" href="assets/images/tm8.png"><img src="assets/images/tm8.png" alt="Tarih Master konu testleri ekranı" loading="lazy" /><span class="shot-label">Konu Testleri</span></a>
+          <a class="shot" href="assets/images/tm1.png"><img src="assets/images/tm1.png" alt="Tarih Master denemeler ekranı" loading="lazy" /><span class="shot-label">Denemeler</span></a>
+          <a class="shot" href="assets/images/tm2.png"><img src="assets/images/tm2.png" alt="Tarih Master haftalık çalışma planı ekranı" loading="lazy" /><span class="shot-label">Çalışma Planı</span></a>
+          <a class="shot" href="assets/images/tm3.png"><img src="assets/images/tm3.png" alt="Tarih Master puan takibi ekranı" loading="lazy" /><span class="shot-label">Puan Takibi</span></a>
+          <a class="shot" href="assets/images/tm4.png"><img src="assets/images/tm4.png" alt="Tarih Master ana ekranı" loading="lazy" /><span class="shot-label">Ana Ekran</span></a>
+          <a class="shot" href="assets/images/tm5.png"><img src="assets/images/tm5.png" alt="Tarih Master oyun modları ekranı" loading="lazy" /><span class="shot-label">Oyun Modları</span></a>
+          <a class="shot" href="assets/images/tm6.png"><img src="assets/images/tm6.png" alt="Tarih Master puan hesaplama ekranı" loading="lazy" /><span class="shot-label">Puan Hesaplama</span></a>
+          <a class="shot" href="assets/images/tm7.png"><img src="assets/images/tm7.png" alt="Tarih Master konu testleri tanıtım ekranı" loading="lazy" /><span class="shot-label">Hızlı Başlangıç</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="lgs-master-showcase">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>LGS Master tanıtımı</h2>
+          <p>Ünite bazlı testler, ilerleme takibi ve eğlenceli mini oyun yapısıyla LGS hazırlığını sade ve anlaşılır hale getiren uygulama deneyimi.</p>
+        </div>
+        <div class="wide-gallery">
+          <div class="wide-shot"><img src="assets/images/lgs_tanitim.jpg" alt="LGS Master tanıtım görseli" loading="lazy" /></div>
         </div>
       </div>
     </section>
