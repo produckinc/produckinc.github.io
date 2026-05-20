@@ -1,12 +1,12 @@
 {
   "latest_version": "1.0.1",
-  "latest_build": 5,
+  "latest_build": 4,
   "min_version": "1.0.0",
   "min_build": 4,
   "title": "Yeni güncelleme hazır",
   "message": "LGS Master için yeni iyileştirmeler hazır. Daha iyi deneyim için uygulamanı güncelle.",
   "whats_new": "• Konu testleri iyileştirildi\n• Reklam akışı düzenlendi\n• Performans ve kararlılık artırıldı",
-  "force_update": true,
+  "force_update": false,
   "remind_after_days": 1,
   "play_store_url": "https://play.google.com/store/apps/details?id=com.produckinc.lgsmaster"
 }
