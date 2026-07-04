@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LGS Clash Hesap Silme Talebi | Produck.inc.app</title>
+  <meta name="description" content="LGS Clash hesabı ve ilişkili verilerin silinmesi için başvuru sayfası." />
+  <style>
+    :root {
+      --bg: #071422;
+      --panel: rgba(255,255,255,.08);
+      --text: #f4f7ff;
+      --muted: #b8c8df;
+      --gold: #f7c85e;
+      --line: rgba(255,255,255,.14);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 10%, rgba(121,92,255,.24), transparent 32%),
+        radial-gradient(circle at 85% 20%, rgba(247,200,94,.12), transparent 28%),
+        var(--bg);
+      padding: 32px 18px;
+    }
+
+    .container {
+      width: min(820px, 100%);
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 24px 80px rgba(0,0,0,.35);
+      backdrop-filter: blur(12px);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 5vw, 42px);
+      color: var(--gold);
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 21px;
+    }
+
+    p, li {
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .button {
+      display: inline-block;
+      margin: 12px 0 8px;
+      padding: 14px 20px;
+      border-radius: 14px;
+      color: #15100a;
+      background: var(--gold);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .note {
+      margin-top: 22px;
+      padding: 16px;
+      border-left: 4px solid var(--gold);
+      background: rgba(247,200,94,.10);
+      border-radius: 12px;
+    }
+
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>LGS Clash Hesap Silme Talebi</h1>
+
+      <p>
+        LGS Clash hesabınızı ve hesabınızla ilişkili oyun verilerinizi silmek için aşağıdaki e-posta adresine talep gönderebilirsiniz.
+      </p>
+
+      <a class="button" href="mailto:produck.inc.app@gmail.com?subject=LGS%20Clash%20Hesap%20Silme%20Talebi">
+        Hesap Silme Talebi Gönder
+      </a>
+
+      <h2>Talep gönderirken yazmanız gerekenler</h2>
+      <ul>
+        <li>LGS Clash uygulamasında kullandığınız kullanıcı adı</li>
+        <li>Google ile giriş yaptıysanız ilgili Google hesabınızın e-posta adresi</li>
+        <li>“Hesabımın ve ilişkili oyun verilerimin silinmesini istiyorum.” ifadesi</li>
+      </ul>
+
+      <h2>Silinecek veriler</h2>
+      <p>
+        Talebiniz doğrulandıktan sonra LGS Clash hesabınıza bağlı kullanıcı adı, avatar seçimi, sınıf seviyesi, XP, seviye, kupa, rozetler, oyun ilerlemesi, oyun istatistikleri ve Firestore üzerinde hesabınızla ilişkilendirilmiş oyun verileri silinir.
+      </p>
+
+      <h2>Saklanabilecek veriler</h2>
+      <p>
+        Yasal yükümlülükler, güvenlik, sahtekârlığın önlenmesi veya hizmetin teknik bütünlüğü için zorunlu olan sınırlı kayıtlar varsa, bu kayıtlar yalnızca gerekli süre boyunca saklanabilir. Firebase Analytics ve AdMob tarafından oluşturulan toplulaştırılmış veya cihaz düzeyinde teknik veriler, ilgili Google hizmetlerinin kendi saklama politikalarına tabi olabilir.
+      </p>
+
+      <h2>İşlem süresi</h2>
+      <p>
+        Hesap silme talepleri doğrulama sonrasında mümkün olan en kısa sürede, en geç 30 gün içinde işleme alınır.
+      </p>
+
+      <div class="note">
+        <strong>Not:</strong> Hesap silme işlemi geri alınamaz. Silinen oyun ilerlemesi, XP, kupa ve rozetler geri getirilemeyebilir.
+      </div>
+    </section>
+
+    <footer>
+      <a href="index.html">Produck.inc.app</a> · LGS Clash
+    </footer>
+  </main>
+</body>
+</html>
