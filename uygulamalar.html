@@ -14,18 +14,21 @@
     body {
       margin: 0;
       min-height: 100vh;
-      padding: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      padding: 30px 20px;
       background: linear-gradient(145deg, #090d18, #181329, #101827);
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .apps {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
     }
 
     .card {
       width: 100%;
-      max-width: 390px;
-      padding: 38px 24px;
+      margin-bottom: 24px;
+      padding: 34px 24px;
       text-align: center;
       border-radius: 30px;
       background: rgba(255, 255, 255, 0.08);
@@ -36,17 +39,18 @@
     }
 
     .app-logo {
-      width: 160px;
-      height: 160px;
+      width: 155px;
+      height: 155px;
       object-fit: contain;
-      margin-bottom: 28px;
+      margin-bottom: 24px;
       border-radius: 32px;
       filter: drop-shadow(0 14px 25px rgba(0, 0, 0, 0.4));
     }
 
     .store-link {
       display: block;
-      margin: 14px auto 0;
+      width: fit-content;
+      margin: 12px auto 0;
       transition: transform 0.2s ease;
     }
 
@@ -55,11 +59,13 @@
     }
 
     .app-store-badge {
+      display: block;
       width: 230px;
       max-width: 100%;
     }
 
     .google-play-badge {
+      display: block;
       width: 260px;
       max-width: 100%;
     }
@@ -68,39 +74,81 @@
 
 <body>
 
-  <main class="card">
+  <main class="apps">
 
-    <img
-      class="app-logo"
-      src="assets/images/tarih-master-logo.png"
-      alt="Tarih Master"
-    >
+    <!-- Tarih Master -->
+    <section class="card">
 
-    <a
-      class="store-link"
-      href="https://apps.apple.com/tr/app/tarih-master-kpss-haz%C4%B1rl%C4%B1k/id6770333147?l=tr"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
       <img
-        class="app-store-badge"
-        src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83"
-        alt="App Store’dan İndir"
+        class="app-logo"
+        src="assets/images/tarih-master-logo.png"
+        alt="Tarih Master"
       >
-    </a>
 
-    <a
-      class="store-link"
-      href="https://play.google.com/store/apps/details?id=com.produckinc.kpsstarihpro"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img
-        class="google-play-badge"
-        src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png"
-        alt="Google Play’den İndir"
+      <a
+        class="store-link"
+        href="https://apps.apple.com/tr/app/tarih-master-kpss-haz%C4%B1rl%C4%B1k/id6770333147?l=tr"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-    </a>
+        <img
+          class="app-store-badge"
+          src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83"
+          alt="App Store’dan İndir"
+        >
+      </a>
+
+      <a
+        class="store-link"
+        href="https://play.google.com/store/apps/details?id=com.produckinc.kpsstarihpro"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="google-play-badge"
+          src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png"
+          alt="Google Play’den İndir"
+        >
+      </a>
+
+    </section>
+
+    <!-- LGS Master -->
+    <section class="card">
+
+      <img
+        class="app-logo"
+        src="assets/images/lgs-master-logo.png"
+        alt="LGS Master"
+      >
+
+      <a
+        class="store-link"
+        href="https://apps.apple.com/tr/app/lgs-master/id6771523589?l=tr"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="app-store-badge"
+          src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/tr-tr?size=250x83"
+          alt="App Store’dan İndir"
+        >
+      </a>
+
+      <a
+        class="store-link"
+        href="https://play.google.com/store/apps/details?id=com.produckinc.lgsmaster"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          class="google-play-badge"
+          src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png"
+          alt="Google Play’den İndir"
+        >
+      </a>
+
+    </section>
 
   </main>
 
