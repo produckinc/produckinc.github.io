@@ -1,13 +1,13 @@
 {
-  "latest_version": "1.0.1",
-  "latest_build": 6,
+  "latest_version": "1.0.2",
+  "latest_build": 7,
   "min_version": "1.0.0",
   "min_build": 4,
-  "title": "Yeni güncelleme hazır",
-  "message": "LGS Master için yeni iyileştirmeler hazır. Daha iyi deneyim için uygulamanı güncelle.",
-  "whats_new": "• Tablet görünümü iyileştirildi\n• Konu testleri iyileştirildi\n• Reklam akışı düzenlendi\n• Performans ve kararlılık artırıldı",
+  "title": "🎉 Yeni Uygulamamız: LGS Deneme!",
+  "message": "LGS Master'ın geliştiricisinden yepyeni bir uygulama!\n\n🚀 LGS Deneme'nin ilk test kullanıcılarından biri olmak ister misin?\n\n📚 LGS denemeleri\n📊 Detaylı başarı analizleri\n🎯 Konu testleri\n\nTest programına ücretsiz katılabilir, uygulamamızı ilk deneyenlerden biri olabilirsin.\n\n⚠️ BU BİR LGS MASTER GÜNCELLEMESİ DEĞİLDİR!\n\nLGS Deneme'nin test kullanıcısı olmak istiyorsan aşağıdaki 'Güncelle' butonuna bas. Açılan sayfada Google grubuna katılarak test başvurunu tamamlayabilirsin.",
+  "whats_new": "📱 LGS Deneme test daveti!\n\n1️⃣ Google grubuna katıl.\n2️⃣ Test kullanıcısı ol.\n3️⃣ Google Play'den indir.\n\n⚠️ Google grubunda 'Gruba katıl' butonuna mutlaka basmalısın.\n\nBu duyuru Android test kullanıcıları içindir.",
   "force_update": false,
   "remind_after_days": 1,
-  "android_url": "https://play.google.com/store/apps/details?id=com.produckinc.lgsmaster",
+  "android_url": "https://produckinc.github.io/lgs-deneme-test.html",
   "ios_url": "https://apps.apple.com/app/id6771523589"
 }
