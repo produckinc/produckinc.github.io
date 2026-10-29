@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#110b24">
+  <meta name="description" content="LGS Deneme test programına katılın, denemeleri ve konu testlerini herkesten önce keşfedin.">
+  <title>LGS Deneme | İlk Deneyenlerden Ol</title>
+  <style>
+    :root{
+      color-scheme:dark;
+      --bg:#0d0b19;
+      --panel:#19132e;
+      --line:#3b3056;
+      --text:#f7f4ff;
+      --muted:#c7bfd9;
+      --purple:#9661ff;
+      --pink:#f46fd1
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:radial-gradient(ellipse 85% 28% at 50% 0%,#412078 0%,transparent 85%),var(--bg);
+      color:var(--text);
+      line-height:1.6
+    }
+    .wrap{max-width:1080px;margin:auto;padding:0 22px}
+    .top{padding:22px 0;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:900;letter-spacing:.4px}
+    .brand span{color:#c69cff}
+    .badge{
+      font-size:12px;
+      font-weight:750;
+      border:1px solid #7251b3;
+      background:#34234f;
+      padding:7px 12px;
+      border-radius:99px
+    }
+    .hero{text-align:center;padding:78px 0 55px}
+    .eyebrow{
+      display:inline-block;
+      color:#e0c7ff;
+      background:#32204e;
+      border:1px solid #66439c;
+      border-radius:99px;
+      padding:7px 16px;
+      font-weight:700;
+      font-size:13px
+    }
+    .hero h1{
+      font-size:clamp(42px,7vw,82px);
+      line-height:1.04;
+      letter-spacing:-2.5px;
+      margin:25px 0 13px
+    }
+    .hero h1 span{
+      display:block;
+      background:linear-gradient(95deg,#e3c3ff,#b281ff,#ff9adf);
+      background-clip:text;
+      -webkit-background-clip:text;
+      color:transparent
+    }
+    .lead{
+      font-size:clamp(17px,2.2vw,22px);
+      max-width:720px;
+      margin:0 auto 30px;
+      color:var(--muted)
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      gap:8px;
+      padding:15px 23px;
+      border-radius:15px;
+      text-decoration:none;
+      font-weight:850;
+      transition:transform .2s,filter .2s
+    }
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.12)}
+    .primary{
+      color:white;
+      background:linear-gradient(110deg,#8652ff,#bd54cf);
+      box-shadow:0 12px 36px #8a50ff44
+    }
+    .secondary{
+      color:white;
+      background:#30254d;
+      border:1px solid #7453ae
+    }
+    .fine{font-size:13px;color:#a9a0be;margin-top:16px}
+    .section{padding:35px 0}
+    .section h2{
+      text-align:center;
+      font-size:clamp(27px,4vw,40px);
+      line-height:1.2;
+      margin:0 0 13px
+    }
+    .section .sub{
+      text-align:center;
+      color:var(--muted);
+      max-width:660px;
+      margin:0 auto 29px
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px
+    }
+    .card{
+      background:linear-gradient(145deg,#211934,#151126);
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:26px;
+      min-height:185px
+    }
+    .icon{font-size:30px}
+    .card h3{margin:13px 0 8px;font-size:19px}
+    .card p{margin:0;color:var(--muted);font-size:15px}
+    .invite{
+      margin:45px 0 30px;
+      padding:42px 25px;
+      text-align:center;
+      background:radial-gradient(circle at top,#65359c99,transparent 75%),linear-gradient(130deg,#291848,#1b1230);
+      border:1px solid #8a58cf;
+      border-radius:27px;
+      box-shadow:0 20px 65px #0004
+    }
+    .invite h2{
+      font-size:clamp(27px,4vw,40px);
+      margin:7px 0 12px
+    }
+    .invite p{
+      color:#e3d9f1;
+      max-width:650px;
+      margin:0 auto 24px
+    }
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px
+    }
+    .step{
+      position:relative;
+      background:#19132c;
+      border:1px solid #534071;
+      border-radius:22px;
+      padding:26px;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start
+    }
+    .number{
+      display:grid;
+      place-items:center;
+      width:42px;
+      height:42px;
+      border-radius:13px;
+      background:#5c3999;
+      color:#fff;
+      font-size:20px;
+      font-weight:900
+    }
+    .step h3{margin:16px 0 7px}
+    .step p{
+      color:var(--muted);
+      margin:0 0 22px;
+      flex:1
+    }
+    .step .btn{width:100%;font-size:14px}
+    .note{
+      margin-top:24px;
+      background:#211c30;
+      border:1px solid #53456d;
+      border-radius:16px;
+      padding:18px 21px;
+      color:#ded4ee
+    }
+    .note strong{color:#fff}
+    .footer{
+      border-top:1px solid #312844;
+      margin-top:55px;
+      padding:27px 0 35px;
+      text-align:center;
+      color:#9c91b1;
+      font-size:13px
+    }
+    .footer a{color:#cbb0ff}
+    @media(max-width:750px){
+      .grid,.steps{grid-template-columns:1fr}
+      .hero{padding:57px 0 35px}
+      .hero h1{letter-spacing:-1.4px}
+      .card{min-height:0}
+      .invite{padding:32px 18px}
+      .top{gap:10px}
+      .badge{font-size:11px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      .btn{transition:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">⚡ <span>LGS</span> DENEME</div>
+      <div class="badge">🚀 ERKEN ERİŞİM</div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow">✨ LGS hazırlığında yeni bir deneyim</div>
+
+        <h1 id="hero-title">
+          LGS'YE HAZIR MISIN?
+          <span>DAHA GÜÇLÜ BİR SEN!</span>
+        </h1>
+
+        <p class="lead">
+          Birbirinden farklı denemeler, konu testleri ve detaylı analizlerle
+          hedeflerine bir adım daha yaklaş.
+          LGS Deneme'yi herkesten önce keşfet!
+        </p>
+
+        <a class="btn primary" href="#katil">
+          🚀 İLK DENEYENLERDEN OL
+        </a>
+
+        <div class="fine">
+          Test programına katılım ücretsizdir.
+          Uygulamada isteğe bağlı ücretli Premium içerikler bulunur.
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="ozellikler">
+        <h2 id="ozellikler">
+          Hedefine giden yolda her şey burada
+        </h2>
+
+        <p class="sub">
+          Çalış, eksiklerini gör ve gelişimini takip et.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <div class="icon">📝</div>
+            <h3>Birbirinden farklı denemeler</h3>
+            <p>
+              Farklı denemelerle bilgini ölç,
+              sınav pratiği kazan.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📚</div>
+            <h3>Konu testleri</h3>
+            <p>
+              Konuları tek tek çalış,
+              eksiklerini tamamlamaya odaklan.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">📊</div>
+            <h3>Detaylı analizler</h3>
+            <p>
+              Sonuçlarını incele,
+              güçlü ve gelişime açık yönlerini keşfet.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🎯</div>
+            <h3>Hedef puan takibi</h3>
+            <p>
+              Hedefini belirle ve çalışmalarını
+              daha planlı sürdür.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🏆</div>
+            <h3>Gelişimini gör</h3>
+            <p>
+              Çalışmalarını takip et,
+              ilerlemeni fark et.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">✨</div>
+            <h3>Herkesten önce keşfet</h3>
+            <p>
+              Test kullanıcıları arasına katılarak
+              uygulamayı erken dene.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="invite" aria-labelledby="invite-title">
+        <div class="eyebrow">🎁 ÖZEL DAVET</div>
+
+        <h2 id="invite-title">
+          İLK DENEYENLERDEN BİRİ OL!
+        </h2>
+
+        <p>
+          LGS Deneme şu anda test aşamasında.
+          İlk kullanıcılarımız arasına katıl,
+          uygulamayı herkesten önce keşfet
+          ve LGS hazırlığına başla.
+        </p>
+
+        <a class="btn primary" href="#katil">
+          ÜCRETSİZ TEST PROGRAMINA KATIL ↓
+        </a>
+      </section>
+
+      <section class="section" id="katil" aria-labelledby="steps-title">
+        <h2 id="steps-title">
+          3 kolay adımda katıl!
+        </h2>
+
+        <p class="sub">
+          Google hesabınla sırayla aşağıdaki işlemleri yapman yeterli.
+          İşlemleri Android telefonundan da gerçekleştirebilirsin.
+        </p>
+
+        <div class="steps">
+          <article class="step">
+            <div class="number">1</div>
+
+            <h3>Test grubuna katıl</h3>
+
+            <p>
+              Butona bas, Google hesabınla giriş yap
+              ve açılan sayfadan
+              <strong>“Gruba katıl”</strong>
+              seçeneğini seç.
+            </p>
+
+            <a
+              class="btn secondary"
+              href="https://groups.google.com/g/lgs-deneme-test"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              👥 GOOGLE GRUBUNA KATIL ↗
+            </a>
+          </article>
+
+          <article class="step">
+            <div class="number">2</div>
+
+            <h3>Test kullanıcısı ol</h3>
+
+            <p>
+              Gruba katıldıktan sonra bu butona bas
+              ve açılan Google Play sayfasında
+              <strong>“Become a tester / Test kullanıcısı ol”</strong>
+              seçeneğini seç.
+            </p>
+
+            <a
+              class="btn secondary"
+              href="https://play.google.com/apps/testing/com.produckinc.lgsdeneme"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ✅ TEST KULLANICISI OL ↗
+            </a>
+          </article>
+
+          <article class="step">
+            <div class="number">3</div>
+
+            <h3>Uygulamayı indir</h3>
+
+            <p>
+              Test kullanıcısı olduktan sonra
+              Android telefonunda Google Play bağlantısını aç
+              ve <strong>LGS Deneme</strong>'yi yükle.
+            </p>
+
+            <a
+              class="btn primary"
+              href="https://play.google.com/store/apps/details?id=com.produckinc.lgsdeneme"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📲 GOOGLE PLAY'DEN İNDİR ↗
+            </a>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong>💡 Küçük bir hatırlatma:</strong>
+          Üç adımda da aynı Google hesabını kullan.
+          Google Play bağlantısı hemen açılmazsa birkaç dakika
+          bekleyip yeniden dene.
+          Test sürümünde bazı özellikler beklenmedik şekilde çalışabilir.
+          Google hesabınla ilgili işlemlerde gerekirse
+          velinden yardım isteyebilirsin.
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    © 2026 ProDuck.inc · LGS Deneme ·
+    <a
+      href="https://produckinc.github.io/lgs-deneme-privacy.html"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Gizlilik Politikası
+    </a>
+  </footer>
+</body>
+</html>
