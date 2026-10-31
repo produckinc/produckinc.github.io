@@ -1,13 +1,13 @@
 {
-  "latest_version": "1.0.2",
-  "latest_build": 7,
+  "latest_version": "1.0.1",
+  "latest_build": 6,
   "min_version": "1.0.0",
   "min_build": 4,
-  "title": "🎉 LGS Deneme Test Daveti!",
-  "message": "🔥 ONLARCA GERÇEK LGS DENEMESİ VE KONU TESTİNİ ŞİMDİDEN ÜCRETSİZ ÇÖZ!\n\n🚀 Yeni uygulamamız LGS Deneme'nin ilk test kullanıcılarından biri ol!\n\n👇 Katılmak için aşağıdaki 'Güncelle' butonuna bas ve test katılım sayfasına git.",
-  "whats_new": "",
+  "title": "Yeni güncelleme hazır",
+  "message": "LGS Master için yeni iyileştirmeler hazır. Daha iyi deneyim için uygulamanı güncelle.",
+  "whats_new": "• Tablet görünümü iyileştirildi\n• Konu testleri iyileştirildi\n• Reklam akışı düzenlendi\n• Performans ve kararlılık artırıldı",
   "force_update": false,
   "remind_after_days": 1,
-  "android_url": "https://produckinc.github.io/lgs-deneme-test.html",
+  "android_url": "https://play.google.com/store/apps/details?id=com.produckinc.lgsmaster",
   "ios_url": "https://apps.apple.com/app/id6771523589"
 }
